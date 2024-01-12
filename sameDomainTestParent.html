@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Parent</h1>
+    <iframe id="iframe" src="https://eshpak.github.io/sameDomainTest.html" width="300" height="250" frameborder="1" scrolling="no" style="width: 300px; height: 250px;"></iframe>
+
+    <script>
+      const hideIframeSD = () => {
+        const frame = document.getElementById("iframe");
+        frame.parentNode.removeChild(frame);
+      }
+    </script>
+  </body>
+</html>
