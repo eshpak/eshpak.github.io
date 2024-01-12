@@ -7,7 +7,7 @@
 
   <body>
     <script>
-      function hideIframeSD() {
+      window.hideIframeSD = function() {
         const frame = document.getElementById("iframe");
         frame.parentNode.removeChild(frame);
       }
